@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Avaleht</title>
+    <title>Meist</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="custom.css">
     <!-- sotsiaalmeedia logode jaoks -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- timeline -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -75,7 +77,6 @@
                     </svg></button>
             </form>
         </div>
-        <!-- cart -->
         <a href="cart.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart">
                     <use xlink:href="#lnr-cart"></use>
                 </svg></button></a>
@@ -83,90 +84,78 @@
     <!-- breadcrumb -->
     <section>
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bg-white my-2 ml-2">
-                <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+            <ol class="breadcrumb bg-white my-2">
+                <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+                <li class="breadcrumb-item active">Meist</li>
             </ol>
         </nav>
     </section>
-    <!-- jumbotron --->
-    <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-            <h1 class="display-2">Tere tulemast!</h1>
-            <p class="lead">Siia saab näiteks lisada allahindlusteate! Donec molestie feugiat eleifend. In id erat neque. Sed et
-                metus blandit, laoreet arcu vitae, bibendum neque.
-                Fusce lorem massa, eleifend quis tortor id, feugiat lobortis ligula. Etiam vel sapien ac enim varius
-                tempus.</p>
-            <button class="btn btn-secondary btn-lg" href="#">Nam scelerisque</button>
-        </div>
-    </div>
-    <!-- tooted --->
-    <section>
-        <div class="container">
-            <h2 class="h mb-3">TOP</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
-                                class="card-img-top"></a>
-                        <div class="card-body">
-                            <h5> <a href="#" class="text-dark">Toode 1</a></h5>
-                            <p class="text-muted card-text"> 15.99&#8364;</p>
-                            <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
-                                class="card-img-top"></a>
-                        <div class="card-body">
-                            <h5> <a href="#" class="text-dark">Toode 2</a></h5>
-                            <p class="text-muted card-text"> 12.99&#8364;</p>
-                            <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
-                                class="card-img-top"></a>
-                        <div class="card-body">
-                            <h5> <a href="#" class="text-dark">Toode 3</a></h5>
-                            <p class="text-muted card-text"> 9.99&#8364;</p>
-                            <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
-                                class="card-img-top"></a>
-                        <div class="card-body">
-                            <h5> <a href="#" class="text-dark">Toode 4</a></h5>
-                            <p class="text-muted card-text"> 18.99&#8364;</p>
-                            <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
-                                class="card-img-top"></a>
-                        <div class="card-body">
-                            <h5> <a href="#" class="text-dark">Toode 5</a></h5>
-                            <p class="text-muted card-text"> 1.99&#8364;</p>
-                            <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
-                                class="card-img-top"></a>
-                        <div class="card-body">
-                            <h5> <a href="#" class="text-dark">Toode 6</a></h5>
-                            <p class="text-muted card-text"> 5.99&#8364;</p>
-                            <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- lehe sisu -->
+    <div class="container-fluid lehesisu">
+        <div class="row meist-info">
+            <div class="col-md align-self-center text-center kast1 px-4 py-4">
+                <h3 class="display-4 pealkiri">Meie pisike tiim!</h3>
+                <p class="lead tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl nisl. Vivamus ac pulvinar
+                    velit. Pellentesque neque eros, tincidunt nec posuere ac, consequat bibendum quam. Sed sed diam
+                    tincidunt, iaculis nisl vel, sagittis ex. Nunc ullamcorper urna ac tincidunt interdum. Vestibulum
+                    finibus, ipsum non molestie tempus, mauris felis egestas felis, vel vehicula leo sapien et sapien.
+                    Integer elit velit, viverra vel ultrices ut, dignissim in turpis. Aliquam ornare erat ex, in auctor
+                    metus convallis ut. Cras vel sapien ac erat gravida fermentum. Curabitur mi est, placerat at mollis
+                    non, porta et mi. Vivamus ac interdum arcu.</p>
+            </div>
+            <div class="col-md text-center px-0">
+                <img class="img-fluid tootajad" src="tootajad1.jpg" alt="töötajad">
             </div>
         </div>
-    </section>
+        <div class="row meist-info">
+            <div class="col-md text-center px-0">
+                <img class="img-fluid tootajad" src="tootajad2.jpg" alt="töötajad">
+            </div>
+            <div class="col-md align-self-center text-center kast2 px-4 py-4">
+                <h3 class="display-4 pealkiri">Kuhu me oleme jõudnud?</h3>
+                <p class="lead tekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl nisl. Vivamus ac pulvinar
+                    velit. Sed sed diam tincidunt, iaculis nisl vel, sagittis ex. Nunc ullamcorper urna ac tincidunt interdum. Vestibulum
+                    finibus, ipsum non molestie tempus, mauris felis egestas felis, vel vehicula leo sapien et sapien.
+                    Integer elit velit, viverra vel ultrices ut, dignissim in turpis. Aliquam ornare erat ex, in auctor
+                    metus convallis ut. Cras vel sapien ac erat gravida fermentum. Curabitur mi est, placerat at mollis
+                    non, porta et mi. Vivamus ac interdum arcu. Pellentesque a sodales nulla. Vivamus mattis quam elit,
+                    quis dictum sapien hendrerit in. Nam ut enim ornare, interdum lectus a, mollis massa.</p>
+            </div>
+        </div>
+        <div class="text-center nupud">
+            <button class="btn btn-lg nupp" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Kuidas meie juurde tööle tulla?</button>
+            <button class="btn btn-lg nupp" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Kuidas meiega ühendust võtta?</button>
+            <button class="btn btn-lg nupp3" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Mõlemad korraga</button>
+        </div>
+        <div class="row">
+            <div class="col-md">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body text-center my-3 lean tekst">
+                    <p class="lead tekst">Kuidas meie juurde tööle tulla? See on väga lihtne... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl nisl. Vivamus ac pulvinar
+                    velit. Sed sed diam tincidunt, iaculis nisl vel, sagittis ex. Nunc ullamcorper urna ac tincidunt interdum. Vestibulum
+                    finibus, ipsum non molestie tempus, mauris felis egestas felis, vel vehicula leo sapien et sapien.
+                    Integer elit velit, viverra vel ultrices ut, dignissim in turpis. Aliquam ornare erat ex, in auctor
+                    metus convallis ut. Cras vel sapien ac erat gravida fermentum. Curabitur mi est, placerat at mollis
+                    non, porta et mi. Vivamus ac interdum arcu. Pellentesque a sodales nulla. Vivamus mattis quam elit,
+                    quis dictum sapien hendrerit in. Nam ut enim ornare, interdum lectus a, mollis massa.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body text-center my-3 lean tekst">
+                    <p class="lead tekst">Sind siis huvitab, Kuidas meiega ühendust võtta? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nisl nisl. Vivamus ac pulvinar
+                    velit. Sed sed diam tincidunt, iaculis nisl vel, sagittis ex. Nunc ullamcorper urna ac tincidunt interdum. Vestibulum
+                    finibus, ipsum non molestie tempus, mauris felis egestas felis, vel vehicula leo sapien et sapien.
+                    Integer elit velit, viverra vel ultrices ut, dignissim in turpis. Aliquam ornare erat ex, in auctor
+                    metus convallis ut. Cras vel sapien ac erat gravida fermentum. Curabitur mi est, placerat at mollis
+                    non, porta et mi. Vivamus ac interdum arcu. Pellentesque a sodales nulla. Vivamus mattis quam elit,
+                    quis dictum sapien hendrerit in. Nam ut enim ornare, interdum lectus a, mollis massa.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
     <!-- jalus --->
     <footer class="bg-light">
         <div class="container-fluid">
