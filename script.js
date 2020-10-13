@@ -117,7 +117,7 @@ function GetMap() {
         disablePanning: false
     });
 
-    var infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
+    infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
         visible: false
     });
     
@@ -152,6 +152,7 @@ function GetMap() {
 }
 
 function pushpinClicked(e) {
+    console.log(e)
     if (e.target.metadata) {
         infobox.setOptions({
             location: e.target.getLocation(),
